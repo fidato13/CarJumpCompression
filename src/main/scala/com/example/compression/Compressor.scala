@@ -28,7 +28,7 @@ class CompressorApply extends Compressor {
     def innerSeq[A](seqInner: Seq[A]): Seq[Seq[A]] = {
       if (seqInner.isEmpty) Seq(Seq())
       else {
-        val (collected, next) = seqInner span { _.equals(seqInner.head) } // this needs replacing for " and dependent on Object#equals() method to discover duplicates."
+        val (collected, next) = seqInner span { _.equals(seqInner.head) } 
         if (next == Nil) Seq(collected)
         else collected +: innerSeq(next)
       }
