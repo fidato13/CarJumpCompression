@@ -15,12 +15,18 @@ Getting Started
 7. Use the api...Examples:
 
    a) http://localhost:8080/api/add  (Post)
+   
    	request body contains one or more elements (newline delimited)
+  
   	returns empty response
+  	
    b) http://localhost:8080/api/0 or http://localhost:8080/api/1 or http://localhost:8080/api/2 and so on
-   	returns element at specified 0-based index
+  
+  	returns element at specified 0-based index
+   	
    c) http://localhost:8080/api/list
-   	returns run-length encoded list of all elements (newline delimited)
+  
+  	returns run-length encoded list of all elements (newline delimited)
    
    
 
